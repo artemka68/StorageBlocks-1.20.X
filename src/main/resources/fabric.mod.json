@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "storageblocks",
+	"version": "${version}",
+	"name": "Storage Blocks",
+	"description": "Adds new crates with items to your game.",
+	"authors": [
+		"7heFiNaTy"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/storageblocks",
+		"sources": "https://github.com/artemka68/Storage_Blocks/tree/master"
+	},
+	"license": "MIT",
+	"icon": "assets/storageblocks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.finaty.storage_blocks.StorageBlocks"
+		],
+		"fabric-datagen": [
+			"com.finaty.storage_blocks.StorageBlocksDataGenerator"
+		],
+		"client": [
+			"com.finaty.storage_blocks.StorageBlocksClient"
+		]
+	},
+	"mixins": [
+		"storageblocks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.20",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/hQFJSj2Hcy"
+			}
+		}
+	}
+}
